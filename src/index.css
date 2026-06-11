@@ -1,0 +1,75 @@
+body {
+    background-color: #103a03;}
+
+strong {
+    color: var(--seccondColor);
+}
+
+.yellowSection {
+    width: 100%;
+    background-color: var(--seccondColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+:root {
+    --mainColor: #4a720a;
+    --seccondColor: #ffd323;
+    --shadows: 7px 7px 0px #103a03;
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anton";
+}
+
+h1,
+h2,
+a,
+h4,
+h3 {
+    font-family: "Archivo Black";
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+main {
+    background-image: url(/images/efe-yagiz-soysal-_HjHVv1RVzM-unsplash.webp), url(/images/photo-1522069169874-c58ec4b76be5.avif);
+    background-size: 30%, 30%;
+    background-position-x: -20%, 120%;
+    background-position-y: 0px, 500px;
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    align-items: center;
+    position: relative;
+    row-gap: 30px;
+}
+
+main section {
+    width: 65%;
+    row-gap: 30px;
+}
+
+main .imagesSection {
+    height: 100vh;
+    width: 100%;
+}

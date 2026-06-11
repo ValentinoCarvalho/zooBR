@@ -1,0 +1,10 @@
+.bigtext {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+.bigtext>h3 {
+    font-size: 3rem;
+
+}

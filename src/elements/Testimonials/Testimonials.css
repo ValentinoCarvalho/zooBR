@@ -1,0 +1,13 @@
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+}

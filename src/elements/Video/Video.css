@@ -1,0 +1,28 @@
+.videoBackground {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.videoBackgroundItem {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.itemDeVideo {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to top, var(--seccondColor), transparent, transparent, transparent, transparent), linear-gradient(to bottom, black, rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226));
+}
+
+.itemDeVideo>h2 {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}

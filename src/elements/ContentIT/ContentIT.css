@@ -1,0 +1,14 @@
+.contentITContainer {
+   /*  background-image: url("/images/duong-thinh-ShUibQcKM1w-unsplash.webp"); */
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.contentITFade {
+    background-image: linear-gradient(to right, black, transparent);
+    height: 100%;
+    padding: 5% 17.5% 5% 17.5%;
+
+}

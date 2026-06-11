@@ -1,0 +1,25 @@
+.smallButton {
+    display: inline-block;
+    color: var(--seccondColor);
+    text-decoration: none;
+    border: solid var(--seccondColor);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.228);
+    text-align: center;
+    transition: all 0.3s;
+
+}
+
+.smallButton:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+    scale: 1.03;
+    transition: all 0.3s;
+}
+
+.icon {
+    height: 20px;
+    align-self: baseline;
+    justify-self: center;
+    translate: 0 20%;
+}

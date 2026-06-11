@@ -1,0 +1,11 @@
+.googleMap{
+    display: flex;
+}
+
+.googleMap > iframe {
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    margin: none;
+     box-shadow: -5px 5px 10px rgba(207, 108, 26, 0.466), 5px -5px 10px rgba(255, 176, 58, 0.425);
+}

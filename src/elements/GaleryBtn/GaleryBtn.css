@@ -1,0 +1,13 @@
+.galeryBtn{
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+
+.galeryBtn:hover{
+    width: 500px;
+    background-color: orange;
+    transition: all 0.4s;
+}

@@ -1,0 +1,17 @@
+.infoBlockContainer {
+    background-image: linear-gradient(45deg, rgba(128, 128, 128, 0.514), transparent, transparent, transparent, transparent, rgba(128, 128, 128, 0.349));
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.466), 5px -5px 10px rgba(128, 128, 128, 0.425);
+}
+
+.infoBlockContainer > strong > h3 {
+    height: 3rem;
+}
+
+.infoBlockContainer>img {
+    background-image: linear-gradient(45deg, gray, transparent);
+    border-radius: 15px;
+    padding: 10px;
+    height: 30px;
+}
