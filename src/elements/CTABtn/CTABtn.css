@@ -15,7 +15,6 @@
 }
 
 .ctaBtn:hover{
-    background-color: var() ;
     transition: all 0.4s;
     scale: 1.05;
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.301) ;
