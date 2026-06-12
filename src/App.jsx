@@ -1,6 +1,7 @@
 import { Bigtext } from "./elements/Bigtext"
 import { ContentIT } from "./elements/ContentIT"
 import { ContentITEvent } from "./elements/ContentITEvent"
+import { CTABtn } from "./elements/CTABtn"
 import { Footer } from "./elements/Footer"
 import { Galery } from "./elements/Galery"
 import { GaleryImg } from "./elements/GaleryImg"
@@ -9,7 +10,7 @@ import { Header } from "./elements/Header"
 import { Hero } from "./elements/Hero"
 import { InfoBlockContainer } from "./elements/InfoBlockContainer"
 import { MobileHeader } from "./elements/MobileHeader"
-import { Navigator } from "./elements/Navigator"
+import { NavFloat } from "./elements/NavFloat"
 import { Reviews } from "./elements/Reviews"
 import { SmallButtonGreen } from "./elements/SmallButtonGreen"
 import { Testimonials } from "./elements/Testimonials"
@@ -21,7 +22,6 @@ function App() {
     <>
       <MobileHeader />
       <Header headerLogo="/assets/logoZoo.png" />
-
 
       <main>
 
@@ -42,19 +42,19 @@ function App() {
         <section className="yellowSection">
           <Video text="Conheça nossos animais!" />
 
-          <Bigtext text="GALERIA" id="galeria" color="black" />
+          <Bigtext text="GALERIA" id="galeria" color="var(--black)" />
 
           <Galery />
 
-          <Bigtext text="LOCALIZAÇÃO ACESSÍVEL" color="black" />
+          <Bigtext text="LOCALIZAÇÃO ACESSÍVEL" color="var(--black)" />
 
           <GoogleMap />
 
-          <Bigtext text="DEPOIMENTOS" id="depoimentos" color="black" />
+          <Bigtext text="DEPOIMENTOS" id="depoimentos" color="var(--black)" />
 
           <Testimonials />
 
-          <Bigtext text="PRÓXIMOS EVENTOS" id="proximosEventos" color="black" />
+          <Bigtext text="PRÓXIMOS EVENTOS" id="proximosEventos" color="var(--black)" />
 
           <ContentITEvent title="Noite dos Oceanos" text='O aquário é transformado em uma experiência noturna com iluminação temática, palestras de biólogos marinhos, alimentação especial dos animais e exibição de espécies raramente apresentadas ao público.' image="/images/eric-aiden-SywC065r66s-unsplash.webp" day="24 de junho" />
 

@@ -54,7 +54,8 @@
 }
 
 .headerImg {
-    background-image: url(/images/banner.webp);
+    background-image: url(/images/banner.png);
+    background-position: 0px 100%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

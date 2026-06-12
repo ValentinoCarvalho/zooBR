@@ -3,7 +3,14 @@ import { SmallButton } from "../SmallButton"
 import "./Header.css"
 
 
+
+
+
 export const Header = (props) => {
+
+    
+
+    
     return (
         <>
             <header className="header">

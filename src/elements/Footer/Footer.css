@@ -1,10 +1,9 @@
 .footerPc {
     width: 100%;
-    height: 100vh;
     box-sizing: border-box;
     background-color:
         /* var(--mainColor) */
-        black;
+        var(--black);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: var(--seccondColor);

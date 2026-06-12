@@ -1,0 +1,7 @@
+.navPc {
+    position: absolute;
+    top: -40px;
+    height: 120px;
+    width: 65%;
+    background-color: rgb(29, 52, 255);
+}

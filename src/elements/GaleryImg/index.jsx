@@ -5,9 +5,9 @@ export const GaleryImg = (props) => {
         <>
             <section className="galeryImageEffect">
 
-                <img src={props.image} alt="" />
+                <img className="galeryImage" src={props.image} alt="" />
 
-                <p className="imgCreditsGalery">@Person on Unsplash</p>
+                <p className="imgCreditsGalery">{props.author}</p>
             </section>
         </>
     )

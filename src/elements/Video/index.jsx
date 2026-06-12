@@ -1,3 +1,4 @@
+import { CTABtn } from "../CTABtn"
 import { SmallButton } from "../SmallButton"
 import "./Video.css"
 
@@ -11,7 +12,7 @@ export const Video = (props) => {
 
                 <div className="itemDeVideo">
                     <h2>{props.text}</h2>
-                    <SmallButton text="Saiba mais" />
+                   <CTABtn text="GARANTIR INGRESSO" />
                 </div>
             </section>
     </>
