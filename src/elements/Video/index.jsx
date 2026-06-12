@@ -1,7 +1,7 @@
 import { SmallButton } from "../SmallButton"
 import "./Video.css"
 
-export const Video = () => {
+export const Video = (props) => {
 
     return (
         <>
@@ -10,7 +10,7 @@ export const Video = () => {
                     loop></video>
 
                 <div className="itemDeVideo">
-                    <h2>Onde a conservação encontra a aventura.</h2>
+                    <h2>{props.text}</h2>
                     <SmallButton text="Saiba mais" />
                 </div>
             </section>

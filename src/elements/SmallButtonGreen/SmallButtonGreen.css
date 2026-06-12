@@ -1,0 +1,30 @@
+.smallButtonGreen {
+    display: inline-block;
+    color: var(--mainColor);
+    text-decoration: none;
+    border: solid #546617;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 187, 0, 0.445);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.smallButtonGreen:hover {
+    background-color: rgba(255, 166, 0, 0.493);
+    scale: 1.03;
+    transition: all 0.3s;
+}
+
+.icon {
+    height: 20px;
+    align-self: baseline;
+    justify-self: center;
+    translate: 0 20%;
+}
+
+@media screen and (max-width:780px) {
+
+    .smallButtonGreen {
+width: 80%;}
+}

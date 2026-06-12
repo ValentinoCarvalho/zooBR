@@ -1,5 +1,5 @@
 .contentITContainer {
-   /*  background-image: url("/images/duong-thinh-ShUibQcKM1w-unsplash.webp"); */
+    /*  background-image: url("/images/duong-thinh-ShUibQcKM1w-unsplash.webp"); */
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -10,5 +10,17 @@
     background-image: linear-gradient(to right, black, transparent);
     height: 100%;
     padding: 5% 17.5% 5% 17.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
 
+@media screen and (max-width: 780px) {
+    .contentITFade {
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.479),black);
+        height: 100%;
+    padding: 5% 10% 5% 10%;
+
+    }
 }

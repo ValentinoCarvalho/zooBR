@@ -9,7 +9,6 @@ export const Header = (props) => {
             <header className="header">
                 <a href="index.html" className="zooLogoContainer">
                     <img src={props.headerLogo} alt="" className="zooLogo" />
-                    <h2>ZooBR</h2>
                 </a>
                 <div className="linksHeader">
                     <a href="#galeria">Galeria</a>

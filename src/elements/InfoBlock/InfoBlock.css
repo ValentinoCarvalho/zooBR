@@ -3,6 +3,7 @@
     border-radius: 15px;
     padding: 20px;
     box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.466), 5px -5px 10px rgba(128, 128, 128, 0.425);
+    box-sizing: border-box;
 }
 
 .infoBlockContainer > strong > h3 {

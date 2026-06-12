@@ -1,11 +1,24 @@
-.googleMap{
+.googleMap {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.googleMap > iframe {
+.googleMap>iframe {
     border: none;
     padding: 10px;
     border-radius: 30px;
     margin: none;
-     box-shadow: -5px 5px 10px rgba(207, 108, 26, 0.466), 5px -5px 10px rgba(255, 176, 58, 0.425);
+    box-shadow: -5px 5px 10px rgba(207, 108, 26, 0.466), 5px -5px 10px rgba(255, 176, 58, 0.425);
+}
+
+.googleMap p {
+    color: black;
+}
+
+@media screen and (max-width: 780px) {
+    .googleMap {
+        width: 80%;
+    }
 }

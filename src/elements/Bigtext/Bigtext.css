@@ -2,9 +2,21 @@
     text-align: center;
     align-content: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 .bigtext>h3 {
     font-size: 3rem;
+}
 
+@media screen and (max-width: 780px) {
+    .bigtext {
+    text-align: center;
+    align-content: center;
+    width: 80%;
+}
+
+.bigtext>h3 {
+    font-size: 2rem;
+}
 }

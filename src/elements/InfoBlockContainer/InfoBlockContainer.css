@@ -4,3 +4,12 @@
     gap: 20px;
     width: 65%;
 }
+
+@media screen and (max-width: 780px) {
+    .infoBlockSection {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 80%;
+    }
+}

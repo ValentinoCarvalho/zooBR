@@ -1,6 +1,7 @@
 import { GaleryBtn } from "../GaleryBtn"
 import { GaleryImg } from "../GaleryImg"
 import {SmallButton} from "../SmallButton"
+import { SmallButtonGreen } from "../SmallButtonGreen"
 import "./Galery.css"
 
 export const Galery = ()=>{
@@ -15,7 +16,7 @@ export const Galery = ()=>{
         <GaleryImg image="\images\colin-meg-TZJ8Q6WWasU-unsplash.webp" />
         </section>
         
-        <SmallButton text="Veja mais fotos em nosso Instagram" />
+        <SmallButtonGreen text="Veja mais fotos em nosso Instagram" />
         </>
     )
 }

@@ -6,7 +6,7 @@ export const Bigtext = (props)=>{
         <>
         
         <section className="bigtext">
-            <h3>{props.text}</h3>
+            <h3 style={{color:props.color}}>{props.text}</h3>
         </section>
         
         </>

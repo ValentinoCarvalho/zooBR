@@ -1,10 +1,11 @@
 .testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px
+    gap: 20px;
+    width: 80%
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     .testimonials {
     display: flex;
     gap: 20px;

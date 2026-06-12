@@ -1,0 +1,96 @@
+  .mobileHeader {
+      display: none;
+  }
+
+  :root {
+      --mainColor: #3b5c07;
+      --seccondColor: #ffd323;
+      --shadows: 7px 7px 0px #103a03;
+      ;
+  }
+
+  @media screen and (max-width: 780px) {
+
+      .mobileHeader {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          height: 60px;
+          width: 100%;
+          background-color: var(--mainColor);
+          z-index: 5;
+          align-items: end;
+      }
+
+      .mobileHeader>a>img,
+      .mobileHeader>a {
+          width: 150px;
+          position: absolute;
+          top: -7px;
+          left: -7px;
+      }
+
+      .mobileHeader>div {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      #hamburgerBtn {
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          appearance: none;
+          right: 0;
+          margin: 5px;
+          background-color: none;
+          background-image: url("/assets/bars-solid-full.svg");
+          border: none;
+          outline: none;
+          transition: all 0.3;
+
+      }
+
+      #hamburgerBtn:checked {
+          appearance: none;
+          background-image: url("/assets/x-solid-full.svg");
+          border: none;
+          outline: none;
+          transition: all 0.3;
+      }
+
+      #hamburgerBtn:checked~.hamburgerItems {
+          display: flex;
+          flex-direction: column;
+          transition: all 0.3;
+          text-align: left;
+      }
+
+      .hamburgerItems {
+          display: none;
+          position: relative;
+          top: 100%;
+          background-color: rgb(16, 37, 15);
+          width: 100%;
+          transition: all 0.3;
+
+      }
+
+      .hamburgerItems a {
+          height: 30px;
+          padding: 10px;
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          align-content: center;
+      }
+
+      .hamburgerItems a:hover {
+          background-color: #113606;
+      }
+
+      .hamburgerItems a:active {
+          background-color: #134405;
+      }
+  }
