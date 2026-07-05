@@ -51,10 +51,6 @@ p,li {
 } */
 
 main {
-    background-image: url(/images/efe-yagiz-soysal-_HjHVv1RVzM-unsplash.webp), url(/images/photo-1522069169874-c58ec4b76be5.avif);
-    background-size: 30%, 32% ;
-    background-position-x: -20%, 120%, -10%;
-    background-position-y: -50px, -50px;
     background-color: var(--black);
     background-repeat: no-repeat;
     height: 100%;
