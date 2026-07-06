@@ -1,0 +1,56 @@
+.textContact{
+    text-align: center;
+}
+
+.formContact {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px gray;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.formInput {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    box-shadow: 0 5px 20px gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1.2rem;
+
+}
+.mandatoryInput::after {
+    content: '*';
+    color: red;
+}
+
+input {
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+    min-height: 10rem;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    box-shadow: 0 5px 20px gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 780px) {
+    .formContact{
+        width: 100%;
+    }
+}

@@ -49,7 +49,7 @@ export const Footer = () => {
                         <br />
                         Todos os direitos reservados.
                         <br />
-                        Desenvolvido por Valentino MC
+                        Desenvolvido por Valentino Carvalho
                     </p>
                 </div>
             </footer>

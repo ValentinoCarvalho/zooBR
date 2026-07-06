@@ -1,0 +1,52 @@
+import { Footer } from "../elements/Footer"
+import { Header } from "../elements/Header"
+import { HeaderNav } from "../elements/HeaderNav"
+import { MobileHeader } from "../elements/MobileHeader"
+import { Notification } from "../elements/Notification/Notification"
+import { useState } from "react"
+import './pagesStyles/ContactPage.css'
+
+export const ContactPage = () => {
+    const [displayNotification, setDisplayNotification] = useState(false)
+
+    return (<>
+        {displayNotification === true ? <Notification title="Formulário enviado com sucesso!" text="AKDSJ ajdlaskj lkasjd" display='true' /> : <></>}
+
+
+        <HeaderNav headerLogo="/assets/logoZoo.png" />
+        <MobileHeader />
+
+        <section className="whiteSection">
+            <h1>Contato</h1>
+            <div className="textContact">
+                <h3>Você pode entrar em contato através de nosso telefone, email ou através do nosso formulário:</h3>
+                <p>(11) 4000-1234</p>
+                <p>contato@zoobra.com.br</p>
+            </div>
+            <h2>formulário</h2>
+            <form className="formContact">
+
+                <label htmlFor="name" className="mandatoryInput">Primeiro nome:</label>
+                <input id='name' className="formInput" type="text" name="" placeholder="José" required />
+
+                <label htmlFor="lastName" className="mandatoryInput">Sobrenome:</label>
+                <input id='lastName' className="formInput" type="text" name="" placeholder="Ferreira" required />
+
+                <label htmlFor="email" className="mandatoryInput">Email:</label>
+                <input id='email' className="formInput" type="email" name="" placeholder="nome@gmail.com" required />
+
+                <label htmlFor="telephone">Telefone / celular:</label>
+                <input id='telephone' className="formInput" type="tel" name="" placeholder="(11)1234-5678" />
+
+                <label htmlFor="contactReason" className="mandatoryInput" required>Motivo de contato:</label>
+                <textarea name="" id="contactReason" required></textarea>
+
+                <input id='' className="formInput" type="submit" name="" onSubmit={(ee) => {
+                    setDisplayNotification(true);
+                    ee.preventDefault()
+                }} />
+            </form>
+        </section>
+        <Footer />
+    </>)
+}

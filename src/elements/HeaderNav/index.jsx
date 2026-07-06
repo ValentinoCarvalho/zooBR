@@ -10,12 +10,12 @@ export const HeaderNav = (props)=>{
                 </Link>
                 <div className="linksHeader">
                     <Link to={'/ingressos'} className="linkBtnHeader" >Ingreços</Link >
-                    <Link className="linkBtnHeader" >Eventos</Link >
-                    <Link className="linkBtnHeader" >Depoimentos</Link >
-                    <Link className="linkBtnHeader" >Educativo</Link >
-                    <Link className="linkBtnHeader" >Programação</Link >
-                    <Link className="linkBtnHeader" >Mapa do zoológico</Link >
-                    <Link className="linkBtnHeader" >Contato</Link >
+                    <Link to={'/'} className="linkBtnHeader" >Eventos</Link >
+                    <Link to={'/'} className="linkBtnHeader" >Depoimentos</Link >
+                    <Link to={'/'} className="linkBtnHeader" >Educativo</Link >
+                    <Link to={'/'} className="linkBtnHeader" >Programação</Link >
+                    <Link to={'/mapa'} className="linkBtnHeader" >Mapa do zoológico</Link >
+                    <Link to={'/contato'} className="linkBtnHeader" >Contato</Link >
                 </div>
             </nav>
     )

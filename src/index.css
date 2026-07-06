@@ -13,7 +13,22 @@ strong {
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
+    text-align: center;
 }
+
+.whiteSection {
+    width: 100%;
+    background-color: #f9f1e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
 
 
 :root {
@@ -39,7 +54,8 @@ h3 {
 }
 
 
-p,li {
+p,
+li {
     font-family: Inter;
     font-size: 1rem;
 }
@@ -88,5 +104,4 @@ main .imagesSection {
         position: relative;
         row-gap: 30px;
     }
-
 }

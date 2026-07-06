@@ -1,23 +1,25 @@
 import "./MobileHeader.css"
+import { Link } from "react-router-dom"
 
-export const MobileHeader = ()=>{
-    return(
+export const MobileHeader = () => {
+    return (
         <>
-        <header className="mobileHeader">
-            <div>
-            <input id="hamburgerBtn" type="checkbox" />
-                <ul className="hamburgerItems">
-                    <a href="">Galeria</a>
-                    <a href="">Eventos</a>
-                    <a href="">Depoimentos</a>
-                    <a href="">Educativo</a>
-                    <a href="">Preços e horários</a>
-                    <a href="">Mapa do zoológico</a>
-                    <a href="">Contato</a>
-                </ul>
+            <div className="mobileHeaderSpace"></div>
+            <header className="mobileHeader">
+            <Link to="/"><img src="/assets/logoZoo.png" alt="" /></Link>
+                <div>
+                    <input id="hamburgerBtn" type="checkbox" />
+                    <ul className="hamburgerItems">
+                        <Link to="">Galeria</Link>
+                        <Link to="">Eventos</Link>
+                        <Link to="">Depoimentos</Link>
+                        <Link to="">Educativo</Link>
+                        <Link to="">Preços e horários</Link>
+                        <Link to="/mapa">Mapa do zoológico</Link>
+                        <Link to="/contato">Contato</Link>
+                    </ul>
                 </div>
-<a href=""><img src="/assets/logoZoo.png" alt="" /></a>
-        </header>
+            </header>
         </>
     )
 }
