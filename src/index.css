@@ -13,7 +13,8 @@ strong {
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    text-align: center;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
 .whiteSection {
@@ -99,9 +100,9 @@ main .imagesSection {
         color: white;
         display: flex;
         flex-direction: column;
-        padding-top: 30px;
         align-items: center;
         position: relative;
         row-gap: 30px;
     }
+    
 }

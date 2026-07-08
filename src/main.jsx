@@ -8,6 +8,7 @@ import { MainPage } from './pages/MainPage.jsx'
 import { BuyTicketsPage } from './pages/BuyTicketsPage.jsx'
 import { MapPage } from './pages/MapPage.jsx'
 import { ContactPage } from './pages/ContactPage.jsx'
+import { EducationalPage } from './pages/EducationalPage.jsx'
 
 const router = createBrowserRouter([
   {path: '/',
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   },
   {path: '/mapa',
     element: <MapPage />
+  },
+  {
+    path: "/educativo",
+    element: <EducationalPage />
   }
 ])
 

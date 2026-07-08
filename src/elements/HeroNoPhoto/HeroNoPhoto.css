@@ -1,0 +1,4 @@
+.heroNoPhoto {
+    display: flex;
+    flex-direction: column;
+}

@@ -29,11 +29,11 @@ export const MainPage = () => {
 
             <MobileHeader />
 
-            <Header image={banners[Math.floor(Math.random()*banners.length)]} />
+            <Header title="Explore o lado feroz do mundo" text="Ingressos a partir de " strong="R$100,00" image={banners[Math.floor(Math.random()*banners.length)]} />
 
             <main>
 
-                <Hero />
+                <Hero title="Boas-vindas ao Mundo Selvagem" text="Descubra espécies fascinantes, aprenda sobre conservação ambiental e embarque em uma aventura pelo reino animal." image="\images\polarBear.webp" />
 
                 <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
 

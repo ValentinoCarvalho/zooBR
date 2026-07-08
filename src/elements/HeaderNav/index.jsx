@@ -12,7 +12,7 @@ export const HeaderNav = (props)=>{
                     <Link to={'/ingressos'} className="linkBtnHeader" >Ingreços</Link >
                     <Link to={'/'} className="linkBtnHeader" >Eventos</Link >
                     <Link to={'/'} className="linkBtnHeader" >Depoimentos</Link >
-                    <Link to={'/'} className="linkBtnHeader" >Educativo</Link >
+                    <Link to={'/educativo'} className="linkBtnHeader" >Educativo</Link >
                     <Link to={'/'} className="linkBtnHeader" >Programação</Link >
                     <Link to={'/mapa'} className="linkBtnHeader" >Mapa do zoológico</Link >
                     <Link to={'/contato'} className="linkBtnHeader" >Contato</Link >

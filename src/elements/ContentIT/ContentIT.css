@@ -16,6 +16,10 @@
     gap: 20px;
 }
 
+.contentITFade p {
+    font-size: 1.3rem;
+} 
+
 @media screen and (max-width: 780px) {
     .contentITFade {
         background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.479),black);

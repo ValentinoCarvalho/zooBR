@@ -8,8 +8,8 @@ export const Header = (props) => {
             <HeaderNav headerLogo="/assets/logoZoo.png"/>
             <section className="headerImg" style={{backgroundImage: `url(${props.image})` }}>
                 <div className="headerContentContainer">
-                    <h2>Explore o lado feroz do mundo</h2>
-                    <p className="heroText">Ingressos a partir de <strong className="heroPrice">100,00R$</strong></p>
+                    <h2>{props.title}</h2>
+                    <p className="heroText">{props.text} <strong className="heroPrice">{props.strong}</strong></p>
                     <SmallButton text="Comprar ingressos" />
                 </div>
             </section>

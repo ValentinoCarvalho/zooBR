@@ -1,0 +1,88 @@
+
+.educationText h2 {
+    color: var(--mainColor);
+    font-size: 2rem;
+}
+
+.educationText p {
+    color: black;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.textPlusImg {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.educationalImg {
+    position: relative;
+    box-shadow: -5px 5px 10px rgba(207, 108, 26, 0.466), 5px -5px 10px rgba(255, 176, 58, 0.425);
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    height: 100%;
+
+}
+
+.educationalImg>img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.educationalImg::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(255, 190, 49, 0.589), transparent, transparent, transparent, transparent, rgba(245, 178, 33, 0.849));
+    border-radius: 30px;
+
+}
+
+@media screen and (max-width: 1000px) {
+.educationText{
+    width: 80%;
+}
+
+    .textPlusImg {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .educationalImg {
+        position: relative;
+        box-shadow: -5px 5px 10px rgba(207, 108, 26, 0.466), 5px -5px 10px rgba(255, 176, 58, 0.425);
+        border-radius: 30px;
+        aspect-ratio: 1/1;
+        height: 100%;
+        grid-row: 2;
+    }
+
+    .educationalImg>img {
+        aspect-ratio: 1/1;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .educationalImg::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(45deg, rgba(255, 190, 49, 0.589), transparent, transparent, transparent, transparent, rgba(245, 178, 33, 0.849));
+        border-radius: 30px;
+
+    }
+}

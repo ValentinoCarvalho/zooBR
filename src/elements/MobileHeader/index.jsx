@@ -13,7 +13,7 @@ export const MobileHeader = () => {
                         <Link to="">Galeria</Link>
                         <Link to="">Eventos</Link>
                         <Link to="">Depoimentos</Link>
-                        <Link to="">Educativo</Link>
+                        <Link to="/educativo">Educativo</Link>
                         <Link to="">Preços e horários</Link>
                         <Link to="/mapa">Mapa do zoológico</Link>
                         <Link to="/contato">Contato</Link>
