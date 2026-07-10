@@ -12,6 +12,7 @@ import { ContentIT } from '../elements/ContentIT'
 import './pagesStyles/EducationalPage.css'
 import { SmallButton } from "../elements/SmallButton"
 import { GoodHero } from "../elements/GoodHero/GoodHero"
+import { CTABtn } from "../elements/CTABtn"
 
 export const EducationalPage = () => {
     const [displayNotification, setDisplayNotification] = useState(false)
@@ -35,9 +36,9 @@ export const EducationalPage = () => {
 
                 <GoodHero title="Centro Educacional" text="O Centro Educacional do ZooBRA promove palestras, oficinas, cursos e experiências práticas voltadas para estudantes, professores e famílias interessadas em aprofundar seus conhecimentos sobre biodiversidade." image="\images\frederick-shaw-llXWZUAQz5A-unsplash.jpg" />
 
-                <h2 className="h2Verde">Agende uma visita pedagógica hoje mesmo:</h2>
                 <section className="agendeSection">
                     <div>
+                <h2 className="h2Verde">Agende uma visita pedagógica hoje mesmo:</h2>
                         <p>Leve sua turma para uma experiência que une ciência, conservação e descoberta. As visitas são adaptadas à faixa etária dos estudantes e conduzidas por educadores especializados, tornando o aprendizado mais envolvente e próximo da natureza.</p>
                         <img className="linhaDoTempoFoto" src="\images\colecaoFotos.png" alt="" />
                     </div>
@@ -70,7 +71,7 @@ export const EducationalPage = () => {
                         </li>
                     </ul>
                 </section>
-
+                <CTABtn text="Agendar" to="/contato" />
             </section>
         </main >
         <Footer />

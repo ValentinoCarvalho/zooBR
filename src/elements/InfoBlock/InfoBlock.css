@@ -1,8 +1,8 @@
 .infoBlockContainer {
-    background-image: linear-gradient(45deg, rgba(128, 128, 128, 0.514), transparent, transparent, transparent, transparent, rgba(128, 128, 128, 0.349));
+    background-image: linear-gradient(45deg, rgba(128, 128, 128, 0.123), transparent, transparent, rgba(128, 128, 128, 0.349));
     border-radius: 15px;
     padding: 20px;
-    box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.466), 5px -5px 10px rgba(128, 128, 128, 0.425);
+    box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.034), 5px -5px 10px rgba(128, 128, 128, 0.034);
     box-sizing: border-box;
 }
 

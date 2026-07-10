@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom"
 import "./CTABtn.css"
 
 export const CTABtn = (props) => {
     return (
-        <>
-            <section className="ctaBtn">
-                <h2>{props.text}</h2>
-            </section>
+        <> <Link to={props.to} className="ctaBtn" >
+            <h2>{props.text}</h2>
+        </Link>
+
         </>
     )
 }

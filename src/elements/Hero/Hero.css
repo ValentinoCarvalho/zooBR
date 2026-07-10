@@ -15,6 +15,11 @@
     background-color: transparent;
 }
 
+.hero p {
+    font-size: 1.3rem;
+
+}
+
 .hero>div {
     height: 70%;
     display: flex;
@@ -31,6 +36,7 @@
         justify-content: space-between;
         column-gap: 20px;
         width: 80%;
+        margin-top: 50px;
     }
 
     .hero>div {

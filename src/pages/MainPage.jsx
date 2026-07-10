@@ -5,6 +5,7 @@ import { CTABtn } from "../elements/CTABtn"
 import { Footer } from "../elements/Footer"
 import { Galery } from "../elements/Galery"
 import { GaleryImg } from "../elements/GaleryImg"
+import { GoodHero } from "../elements/GoodHero/GoodHero"
 import { GoogleMap } from "../elements/GoogleMap"
 import { Header } from "../elements/Header"
 import { Hero } from "../elements/Hero"
@@ -17,7 +18,7 @@ import { Testimonials } from "../elements/Testimonials"
 import { Video } from "../elements/Video"
 
 export const MainPage = () => {
-    const banners = ['/images/banners/banner0.png', '/images/banners/banner1.png', '/images/banners/banner2.png']
+    const banners = ['/images/banners/banner0.png', '/images/banners/banner1.png', '/images/banners/banner2.png','/images/banners/banner3.png', '/images/banners/banner4.png', '/images/banners/banner5.png']
     
     const dataTempo = new Date
     const mesTempo = dataTempo.getMonth()
@@ -33,9 +34,9 @@ export const MainPage = () => {
 
             <main>
 
-                <Hero title="Boas-vindas ao Mundo Selvagem" text="Descubra espécies fascinantes, aprenda sobre conservação ambiental e embarque em uma aventura pelo reino animal." image="\images\polarBear.webp" />
-
-                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
+                <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos"/>
+                
+                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA"/>
 
                 <InfoBlockContainer />
 
@@ -46,6 +47,7 @@ export const MainPage = () => {
                 <ContentIT title="Encontro com os Gigantes" text="Participe de uma apresentação especial sobre elefantes, girafas e rinocerontes. Aprenda fatos surpreendentes sobre suas características, comportamentos e desafios de conservação." image="/images/chris-curry-H6zkZItfkQo-unsplash.webp" />
 
                 <ContentIT title="Veja os reis da savana em ação!" text="Acompanhe nossos tratadores durante a alimentação de leões, tigres e onças. Descubra curiosidades sobre seus hábitos, alimentação e importância para o equilíbrio dos ecossistemas." image="/images/zdenek-machacek-UxHol6SwLyM-unsplash.webp" />
+
 
                 <section className="yellowSection">
                     <Video text="Conheça nossos animais!" />

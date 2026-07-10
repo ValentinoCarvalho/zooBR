@@ -9,7 +9,7 @@ export const HeaderNav = (props)=>{
                     <img src={props.headerLogo} alt="" className="zooLogo" />
                 </Link>
                 <div className="linksHeader">
-                    <Link to={'/ingressos'} className="linkBtnHeader" >Ingreços</Link >
+                    <Link to={'/ingressos'} className="linkBtnHeader" >Ingressos</Link >
                     <Link to={'/'} className="linkBtnHeader" >Eventos</Link >
                     <Link to={'/'} className="linkBtnHeader" >Depoimentos</Link >
                     <Link to={'/educativo'} className="linkBtnHeader" >Educativo</Link >

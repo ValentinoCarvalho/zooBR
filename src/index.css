@@ -1,3 +1,10 @@
+:root {
+    --mainColor: #405A1A;
+    --seccondColor: #eeb822;
+    --shadows: 7px 7px 0px #2F4716;
+    --black: #171717;
+}
+
 body {
     background-color: var(--black);
 }
@@ -30,14 +37,10 @@ strong {
 }
 
 
-
-
-:root {
-    --mainColor: #4a720a;
-    --seccondColor: #ffd323;
-    --shadows: 7px 7px 0px #103a03;
-    --black: black;
+.outsideItem{
+    width: 80%;
 }
+
 
 * {
     margin: 0;
@@ -58,7 +61,7 @@ h3 {
 p,
 li {
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /* body {
@@ -106,3 +109,118 @@ main .imagesSection {
     }
     
 }
+
+/* 
+
+body {
+    background-color: var(--black);
+
+}
+
+strong {
+    color: var(--seccondColor);
+}
+
+.yellowSection {
+    width: 100%;
+    background-color: var(--seccondColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.whiteSection {
+    width: 100%;
+    background-color: #f9f1e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.outsideItem {
+    width: 80%;
+}
+
+:root {
+    --mainColor: #4a720a;
+    --seccondColor: #ffd323;
+    --shadows: 7px 7px 0px #103a03;
+    --black: #4a720a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+h1,
+h2,
+a,
+h4,
+h3 {
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+}
+
+
+p,
+li {
+    font-family: Inter;
+    font-size: 1rem;
+}
+
+/* body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+main {
+    background-image: url('/images/backgroundVerde.png');
+    background-repeat: no-repeat repeat-y;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    row-gap: 30px;
+}
+
+main section {
+    width: 65%;
+    row-gap: 30px;
+}
+
+main .imagesSection {
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        background-image: url('/images/backgroundVerde.png');
+        background-repeat: repeat-y;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        row-gap: 30px;
+    }
+
+}
+
+*/

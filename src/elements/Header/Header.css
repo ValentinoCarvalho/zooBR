@@ -35,6 +35,7 @@
     .headerImg {
         background-size: cover;
         background-position: center;
+        background-position-y: bottom;
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;

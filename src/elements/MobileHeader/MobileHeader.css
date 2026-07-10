@@ -2,13 +2,6 @@
       display: none;
   }
 
-  :root {
-      --mainColor: #3b5c07;
-      --seccondColor: #ffd323;
-      --shadows: 7px 7px 0px #103a03;
-      ;
-  }
-
   @media screen and (max-width: 1000px) {
 
       .mobileHeaderSpace {

@@ -22,9 +22,9 @@
     top: 0;
     text-align: center;
     justify-content: center;
-    padding: 0 10% 0 10%;
     align-content: center;
-    background: linear-gradient(to top, var(--seccondColor), transparent, transparent, transparent, transparent), linear-gradient(to bottom, var(--black), rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226),rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226));
+    background-color: rgba(54, 54, 54, 0.555);
+    align-items: center;
 }
 
 .itemDeVideo>h2 {
