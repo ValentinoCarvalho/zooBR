@@ -13,9 +13,16 @@ import './pagesStyles/EducationalPage.css'
 import { SmallButton } from "../elements/SmallButton"
 import { GoodHero } from "../elements/GoodHero/GoodHero"
 import { CTABtn } from "../elements/CTABtn"
+import { ContentITEvent } from "../elements/ContentITEvent"
 
 export const EducationalPage = () => {
     const [displayNotification, setDisplayNotification] = useState(false)
+
+    const dataTempo = new Date
+    const mesTempo = dataTempo.getMonth()
+    const diaTempo = dataTempo.getDate()
+
+    const mesesNomes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro', 'Janeiro']
 
     return (<>
         <MobileHeader />
@@ -28,6 +35,9 @@ export const EducationalPage = () => {
 
                 <GoodHero title="Mais do que entretenimento" text="No ZooBRA acreditamos que conhecer a natureza é o primeiro passo para protegê-la. Nossos programas educativos unem ciência, conservação e experiências práticas para aproximar pessoas de todas as idades da vida selvagem." image="\images\pexels-atiek-arief-2154698689-37875511.jpg" />
 
+
+                <GoodHero right={true} title="Lorem Impsum" text="O rato tentou roer a roupa do Rei de Roma, mas a fusão é apenas um artifício barato para tornarem gems fracas mais fortes" image="/images/pexels-alexey-k-458081116-38247397.jpg" />
+
                 <ContentIT title="Visitas Escolares" text="O ZooBRA recebe escolas de todo o país com roteiros personalizados para diferentes faixas etárias. Professores contam com materiais de apoio, oficinas e atividades alinhadas aos conteúdos curriculares." image="/images/the-tampa-bay-estuary-program-IcUQNzaHrvg-unsplash.jpg" />
 
                 <ContentIT title="Compromisso com os Objetivos de Desenvolvimento Sustentável" text="O ZooBRA desenvolve ações alinhadas à Agenda 2030 das Nações Unidas, promovendo educação de qualidade, conservação da biodiversidade, consumo responsável e conscientização ambiental." image="/images/odsPic.avif" />
@@ -38,7 +48,7 @@ export const EducationalPage = () => {
 
                 <section className="agendeSection">
                     <div>
-                <h2 className="h2Verde">Agende uma visita pedagógica hoje mesmo:</h2>
+                        <h2 className="h2Verde">Agende uma visita pedagógica hoje mesmo:</h2>
                         <p>Leve sua turma para uma experiência que une ciência, conservação e descoberta. As visitas são adaptadas à faixa etária dos estudantes e conduzidas por educadores especializados, tornando o aprendizado mais envolvente e próximo da natureza.</p>
                         <img className="linhaDoTempoFoto" src="\images\colecaoFotos.png" alt="" />
                     </div>
@@ -72,6 +82,14 @@ export const EducationalPage = () => {
                     </ul>
                 </section>
                 <CTABtn text="Agendar" to="/contato" />
+
+                <ContentITEvent title="Noite das Borboletas Luminescentes" image="/images/sarah-brown-Ra5Q6qXZYrE-unsplash.webp" text="Por uma única noite, o Reino das Borboletas recebe uma iluminação especial inspirada em florestas bioluminescentes. Guias apresentam espécies raras, curiosidades sobre metamorfose e uma exposição artística de asas gigantes iluminadas." day={`${diaTempo < 26 ? diaTempo + 4 : 7} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
+
+                <ContentITEvent title="Noite dos Oceanos" text='O aquário é transformado em uma experiência noturna com iluminação temática, palestras de biólogos marinhos, alimentação especial dos animais e exibição de espécies raramente apresentadas ao público.' image="/images/eric-aiden-SywC065r66s-unsplash.webp" day={`${diaTempo < 20 ? diaTempo + 9 : 16} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
+
+                <ContentITEvent title="O museu ganha vida após o anoitecer." text='Uma experiência imersiva com projeções, sons ambientes, atores caracterizados como paleontólogos e apresentações especiais que recriam o mundo dos dinossauros.' image="/images/narciso-arellano-XGs1Dwk9V9M-unsplash.webp" day={`${diaTempo < 15 ? diaTempo + 15 : 9} de ${diaTempo < 15 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
+
+
             </section>
         </main >
         <Footer />

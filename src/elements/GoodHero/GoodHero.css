@@ -1,11 +1,4 @@
-
-.educationText h2 {
-    color: var(--mainColor);
-    font-size: 2rem;
-}
-
 .educationText p {
-    color: black;
     font-size: 1.3rem;
     text-align: justify;
 }

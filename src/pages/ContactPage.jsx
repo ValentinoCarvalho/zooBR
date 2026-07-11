@@ -24,7 +24,7 @@ export const ContactPage = () => {
                 <p>contato@zoobra.com.br</p>
             </div>
             <h2>formulário</h2>
-            <form className="formContact">
+            <form className="formContact" onSubmit={e=>{e.preventDefault();setDisplayNotification(true)}}>
 
                 <label htmlFor="name" className="mandatoryInput">Primeiro nome:</label>
                 <input id='name' className="formInput" type="text" name="" placeholder="José" required />

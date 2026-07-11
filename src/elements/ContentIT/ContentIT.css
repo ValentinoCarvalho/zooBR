@@ -16,8 +16,13 @@
     gap: 20px;
 }
 
+.contentITContainer p{
+    color: var(--seccondColor);
+}
+
 .contentITFade p {
     font-size: 1.3rem;
+    color: white;
 } 
 
 @media screen and (max-width: 780px) {

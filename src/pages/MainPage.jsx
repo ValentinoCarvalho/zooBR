@@ -18,8 +18,8 @@ import { Testimonials } from "../elements/Testimonials"
 import { Video } from "../elements/Video"
 
 export const MainPage = () => {
-    const banners = ['/images/banners/banner0.png', '/images/banners/banner1.png', '/images/banners/banner2.png','/images/banners/banner3.png', '/images/banners/banner4.png', '/images/banners/banner5.png']
-    
+    const banners = ['/images/banners/banner0.png', '/images/banners/banner1.png', '/images/banners/banner2.png', '/images/banners/banner3.png', '/images/banners/banner4.png', '/images/banners/banner5.png']
+
     const dataTempo = new Date
     const mesTempo = dataTempo.getMonth()
     const diaTempo = dataTempo.getDate()
@@ -30,15 +30,17 @@ export const MainPage = () => {
 
             <MobileHeader />
 
-            <Header title="Explore o lado feroz do mundo" text="Ingressos a partir de " strong="R$100,00" image={banners[Math.floor(Math.random()*banners.length)]} />
+            <Header title="Explore o lado feroz do mundo" text="Ingressos a partir de " strong="R$100,00" image={banners[Math.floor(Math.random() * banners.length)]} />
 
             <main>
 
-                <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos"/>
-                
-                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA"/>
+                <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos" />
+
+                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
 
                 <InfoBlockContainer />
+
+                <GoodHero right={false} title="Lorem Impsum" text="O rato tentou roer a roupa do Rei de Roma, mas a fusão é apenas um artifício barato para tornarem gems fracas mais fortes" image="/images/pexels-alexey-k-458081116-38247397.jpg" />
 
                 <Bigtext text="VÁRIAS ATIVIDADES DIVERTIDAS E EDUCATIVAS" />
 
@@ -66,11 +68,11 @@ export const MainPage = () => {
 
                     <Bigtext text="PRÓXIMOS EVENTOS" id="proximosEventos" color="var(--black)" />
 
+                    <ContentITEvent title="Noite das Borboletas Luminescentes" image="/images/sarah-brown-Ra5Q6qXZYrE-unsplash.webp" text="Por uma única noite, o Reino das Borboletas recebe uma iluminação especial inspirada em florestas bioluminescentes. Guias apresentam espécies raras, curiosidades sobre metamorfose e uma exposição artística de asas gigantes iluminadas." day={`${diaTempo < 26 ? diaTempo + 4 : 7} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
+
                     <ContentITEvent title="Noite dos Oceanos" text='O aquário é transformado em uma experiência noturna com iluminação temática, palestras de biólogos marinhos, alimentação especial dos animais e exibição de espécies raramente apresentadas ao público.' image="/images/eric-aiden-SywC065r66s-unsplash.webp" day={`${diaTempo < 20 ? diaTempo + 9 : 16} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
 
-                    <ContentITEvent title="O museu ganha vida após o anoitecer." text='Uma experiência imersiva com projeções, sons ambientes, atores caracterizados como paleontólogos e apresentações especiais que recriam o mundo dos dinossauros.' image="/images/narciso-arellano-XGs1Dwk9V9M-unsplash.webp" day={`${diaTempo < 15 ? diaTempo + 15 : 9} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
-
-                    <ContentITEvent title="Noite das Borboletas Luminescentes" image="/images/sarah-brown-Ra5Q6qXZYrE-unsplash.webp" text="Por uma única noite, o Reino das Borboletas recebe uma iluminação especial inspirada em florestas bioluminescentes. Guias apresentam espécies raras, curiosidades sobre metamorfose e uma exposição artística de asas gigantes iluminadas." day={`${diaTempo < 26 ? diaTempo + 4 : 7} de ${diaTempo < 26 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
+                    <ContentITEvent title="O museu ganha vida após o anoitecer." text='Uma experiência imersiva com projeções, sons ambientes, atores caracterizados como paleontólogos e apresentações especiais que recriam o mundo dos dinossauros.' image="/images/narciso-arellano-XGs1Dwk9V9M-unsplash.webp" day={`${diaTempo < 15 ? diaTempo + 15 : 9} de ${diaTempo < 15 ? mesesNomes[mesTempo] : mesesNomes[mesTempo + 1]}`} />
 
                 </section>
             </main>

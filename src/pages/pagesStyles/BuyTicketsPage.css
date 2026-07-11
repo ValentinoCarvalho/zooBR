@@ -1,0 +1,177 @@
+.buyTicketsForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.buyTicketsInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ticketsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticketBox {
+    height: 100px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ticketsAmountInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.ticketsAmountInputContainer label {
+    width: 100%;
+}
+
+.ticketsAmountInput {
+    display: flex;
+    gap: 5px;
+    width: 200px;
+}
+
+.ticketsAmountInput input {
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.ticketsAmountInput button {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(21, 197, 21);
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.ticketsAmountInput button:nth-child(2) {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.ticketBox::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 10px;
+    background-color: var(--seccondColor);
+}
+
+#ticketsAmount {
+    display: flex;
+}
+
+.buyTicketsInput {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: gainsboro;
+}
+
+.calendarContainer {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+.weekDay {
+    text-align: center;
+    width: 50px;
+}
+
+.calendarContainer input {
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: none;
+}
+
+.calendarContainer label:has(+ input:checked),
+.calendarContainer:has(input:checked) .calendarDayLabel {
+    background-color: var(--seccondColor);
+}
+
+.calendarContainer label {
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    background-color: gainsboro;
+}
+
+.calendarioNav {
+    grid-column: 7 span;
+    grid-row: 1;
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .buyTicketsForm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .calendarContainer {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 3px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .ticketBox {
+        height: 100px;
+        background-color: gainsboro;
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .ticketBox h2 {
+        font-size: 1.5rem;
+    }
+
+}

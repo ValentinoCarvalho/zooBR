@@ -1,19 +1,31 @@
 import './GoodHero.css'
 export const GoodHero = (props) => {
+    return(
+    props.right === true ?
 
-    return (<section className="educationText">
-
-        <div className="textPlusImg">
-            <div className="educationalImg" >
-                <img src={props.image} alt="" />
+        <section className="educationText">
+            <div className="textPlusImg">
+                <div>
+                    <h2>{props.title}</h2>
+                    <p>{props.text}</p>
+                </div>
+                <div className="educationalImg" >
+                    <img src={props.image} alt="" />
+                </div>
             </div>
-            <div>
-                <h2>{props.title}</h2>
-                <p>{props.text}</p>
+        </section>
+        :
+        <section className="educationText">
+            <div className="textPlusImg">
+                <div className="educationalImg" >
+                    <img src={props.image} alt="" />
+                </div>
+                <div>
+                    <h2>{props.title}</h2>
+                    <p>{props.text}</p>
+                </div>
             </div>
-        </div>
-
-    </section>)
+        </section>)
 
 
 }
