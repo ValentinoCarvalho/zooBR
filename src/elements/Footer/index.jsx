@@ -33,6 +33,16 @@ export const Footer = () => {
                     <li>Email: contato@zoobra.com.br</li>
                     <li>WhatsApp: (11) 99999-9999</li>
                 </ul>
+                <ul id="meiosDePagamentoFooter">
+                    <h2>Meios de Pagamento</h2>
+                    <div>
+                    <img src="/payM/pix.svg" className="payM" alt="" />
+                    <img src="/payM/apple-pay.svg" className="payM" alt="" />
+                    <img src="/payM/google-pay.svg" className="payM" alt="" />
+                    <img src="/payM/visa.svg" className="payM" alt="" />
+                    <img src="/payM/mastercard.svg" className="payM" alt="" />
+                    </div>
+                </ul>
                 <div className="redesFooterContainer">
                     <h2>Nossas Redes</h2>
                     <ul id="redesFooter">

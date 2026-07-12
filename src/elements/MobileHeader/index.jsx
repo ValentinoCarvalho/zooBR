@@ -10,7 +10,7 @@ export const MobileHeader = () => {
                 <div>
                     <input id="hamburgerBtn" type="checkbox" />
                     <ul className="hamburgerItems">
-                        <Link to="">Galeria</Link>
+                        <Link to="/ingressos">Ingressos</Link>
                         <Link to="">Eventos</Link>
                         <Link to="">Depoimentos</Link>
                         <Link to="/educativo">Educativo</Link>
