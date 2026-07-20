@@ -40,7 +40,7 @@ export const MainPage = () => {
 
                 <InfoBlockContainer />
 
-                <GoodHero right={false} title="Lorem Impsum" text="O rato tentou roer a roupa do Rei de Roma, mas a fusão é apenas um artifício barato para tornarem gems fracas mais fortes" image="/images/pexels-alexey-k-458081116-38247397.jpg" />
+                <GoodHero right={false} title="CONEXÕES QUE TRANSFORMAM" text="Cada encontro no ZooBRA é uma oportunidade para despertar a curiosidade e fortalecer o respeito pela vida selvagem. Mais do que observar animais, nossos visitantes conhecem histórias de conservação e entendem por que proteger a natureza é uma responsabilidade de todos." image="/images/pexels-alexey-k-458081116-38247397.jpg" />
 
                 <Bigtext text="VÁRIAS ATIVIDADES DIVERTIDAS E EDUCATIVAS" />
 

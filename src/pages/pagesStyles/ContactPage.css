@@ -26,10 +26,6 @@
     font-size: 1.2rem;
 
 }
-.mandatoryInput::after {
-    content: '*';
-    color: red;
-}
 
 input {
     background-color: white;

@@ -111,6 +111,22 @@
     width: min-content;
 }
 
+.monthNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.monthNav button{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
 .emptyDay{
     background-color: rgb(175, 175, 175);
     display: block;
@@ -129,15 +145,14 @@
     display: none;
 }
 
-.calendarContainer label:has(+ input:checked),
-.calendarContainer:has(input:checked) .calendarDayLabel {
+.calendarDayLabel:has(input:checked) {
     background-color: var(--seccondColor);
     color: black;
     outline: solid;
     outline-offset: -5px;
 }
-.calendarContainer label:has(+ input:disabled),
-.calendarContainer:has(input:disabled) .calendarDayLabel {
+
+.calendarDayLabel:has(input:disabled) {
     background-color: gray;
 }
 

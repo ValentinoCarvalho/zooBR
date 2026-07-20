@@ -13,6 +13,11 @@ strong {
     color: var(--seccondColor);
 }
 
+.mandatoryInput::after {
+    content: '*';
+    color: red;
+}
+
 .yellowSection {
     width: 100%;
     background-color: var(--seccondColor);
