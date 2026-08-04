@@ -37,7 +37,7 @@ export const Programacao = () => {
             <MobileHeader/>
 
             <main>
-
+<section className="sectionDivision">
                 <section className="programacaoTitle">
                     <h1><strong>Planeje sua visita</strong> </h1>
                     <p>Organize seu passeio com tranquilidade. O ZooBRA está aberto durante toda a semana, oferecendo experiências educativas, atrações e contato com a natureza para visitantes de todas as idades.</p>
@@ -90,6 +90,7 @@ export const Programacao = () => {
 
                         </table>
                     </table>
+                </section>
                 </section>
 
 

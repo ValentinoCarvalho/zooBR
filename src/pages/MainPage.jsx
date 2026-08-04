@@ -29,30 +29,43 @@ export const MainPage = () => {
     return (
         <>
 
-        <TermsPopUp ></TermsPopUp>
+            <TermsPopUp ></TermsPopUp>
 
             <MobileHeader />
 
             <Header title="Explore o lado feroz do mundo" text="Ingressos a partir de " strong="R$75,00" image={banners[Math.floor(Math.random() * banners.length)]} />
 
             <main>
+                <section className="sectionDivision">
 
-                <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos" />
+                    <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos" />
+                </section>
 
-                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
+                <section className="sectionDivision">
 
-                <InfoBlockContainer />
+                    <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
 
-                <GoodHero right={false} title="CONEXÕES QUE TRANSFORMAM" text="Cada encontro no ZooBRA é uma oportunidade para despertar a curiosidade e fortalecer o respeito pela vida selvagem. Mais do que observar animais, nossos visitantes conhecem histórias de conservação e entendem por que proteger a natureza é uma responsabilidade de todos." image="/images/pexels-alexey-k-458081116-38247397.jpg" />
+                    <InfoBlockContainer />
 
-                <Bigtext text="VÁRIAS ATIVIDADES DIVERTIDAS E EDUCATIVAS" />
+                </section>
 
-                <ContentIT title="Dia do Tratador" text="Conheça a rotina dos profissionais que cuidam dos animais e veja como são realizados os procedimentos de alimentação, enriquecimento ambiental e cuidados veterinários." image="/images/duong-thinh-ShUibQcKM1w-unsplash.webp" />
+                <section className="sectionDivision">
 
-                <ContentIT title="Encontro com os Gigantes" text="Participe de uma apresentação especial sobre elefantes, girafas e rinocerontes. Aprenda fatos surpreendentes sobre suas características, comportamentos e desafios de conservação." image="/images/chris-curry-H6zkZItfkQo-unsplash.webp" />
 
-                <ContentIT title="Veja os reis da savana em ação!" text="Acompanhe nossos tratadores durante a alimentação de leões, tigres e onças. Descubra curiosidades sobre seus hábitos, alimentação e importância para o equilíbrio dos ecossistemas." image="/images/zdenek-machacek-UxHol6SwLyM-unsplash.webp" />
+                    <GoodHero right={false} title="CONEXÕES QUE TRANSFORMAM" text="Cada encontro no ZooBRA é uma oportunidade para despertar a curiosidade e fortalecer o respeito pela vida selvagem. Mais do que observar animais, nossos visitantes conhecem histórias de conservação e entendem por que proteger a natureza é uma responsabilidade de todos." image="/images/pexels-alexey-k-458081116-38247397.jpg" />
 
+                </section>
+
+                <section className="sectionDivision">
+
+                    <Bigtext text="VÁRIAS ATIVIDADES DIVERTIDAS E EDUCATIVAS" />
+
+                    <ContentIT title="Dia do Tratador" text="Conheça a rotina dos profissionais que cuidam dos animais e veja como são realizados os procedimentos de alimentação, enriquecimento ambiental e cuidados veterinários." image="/images/duong-thinh-ShUibQcKM1w-unsplash.webp" />
+
+                    <ContentIT title="Encontro com os Gigantes" text="Participe de uma apresentação especial sobre elefantes, girafas e rinocerontes. Aprenda fatos surpreendentes sobre suas características, comportamentos e desafios de conservação." image="/images/chris-curry-H6zkZItfkQo-unsplash.webp" />
+
+                    <ContentIT title="Veja os reis da savana em ação!" text="Acompanhe nossos tratadores durante a alimentação de leões, tigres e onças. Descubra curiosidades sobre seus hábitos, alimentação e importância para o equilíbrio dos ecossistemas." image="/images/zdenek-machacek-UxHol6SwLyM-unsplash.webp" />
+                </section>
 
                 <section className="yellowSection">
                     <Video text="Conheça nossos animais!" />

@@ -11,16 +11,16 @@ export const Footer = () => {
                 </div>
                 <ul id="navegacaoFooter">
                     <h2>Navegação</h2>
-                    <li><Link  onClick={window.scrollTo({top: 0})} onClick={window.scrollTo({top: 0})} to="/">Início</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/">Início</Link></li>
                     {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/galeria">Galeria</Link></li> */}
                     {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/eventos">Eventos</Link></li> */}
-                    <li><Link  onClick={window.scrollTo({top: 0})} to="/educativo">Educativo</Link></li>
-                    <li><Link  onClick={window.scrollTo({top: 0})} to="/mapa">Mapa do Zoológico</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/educativo">Educativo</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/mapa">Mapa do Zoológico</Link></li>
                     {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/depoimentos">Depoimentos</Link></li> */}
-                    <li><Link  onClick={window.scrollTo({top: 0})} to="/contato">Contato</Link></li>
-                    <li><Link  onClick={window.scrollTo({top: 0})} to="/sobre">Sobre</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/contato">Contato</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/sobre">Sobre</Link></li>
                     {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/trabalhe-conosco">Trabalhe Conosco</Link></li> */}
-                    <li><Link  onClick={window.scrollTo({top: 0})} to="/termos-e-condicoes">Termos e Condições</Link></li>
+                    <li><Link onClick={() => window.scrollTo({top: 0})} to="/termos-e-condicoes">Termos e Condições</Link></li>
                 </ul>
                 <ul id="horarioFooter">
                     <h2>Visite-nos</h2>

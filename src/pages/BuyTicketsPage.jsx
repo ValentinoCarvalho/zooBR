@@ -136,6 +136,7 @@ export const BuyTicketsPage = () => {
         <MobileHeader />
         <section className="whiteSection">
             <form className="buyTicketsForm" onSubmit={handleSubmit}>
+                <section className="formularioSection">
                 <section className="buyTicketsInputContainer">
                     <h1>Comprar Ingressos</h1>
                     <p>Os ingressos adquiridos são válidos exclusivamente para a data selecionada durante a compra. Alterações de data estão sujeitas à disponibilidade e às <Link to={'/termos-e-condicoes'}>políticas vigentes</Link> do ZooBRA.</p>
@@ -229,7 +230,6 @@ export const BuyTicketsPage = () => {
                             onChange={handleFormChange}
                         />
                     </label>
-                    <button type="submit" className="continueBtn">Prosseguir com o pagamento</button>
                 </section>
 
                 <section className="calendarContainer">
@@ -274,7 +274,8 @@ export const BuyTicketsPage = () => {
                         )
                     })}
                 </section>
-
+</section>
+<button type="submit" className="continueBtn">Prosseguir com o pagamento</button>
             </form>
         </section>
         <Footer />
