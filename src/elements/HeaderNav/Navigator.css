@@ -62,13 +62,13 @@
 
 }
 
-.header>div>.linkBtnHeader:nth-child(6),
-.header>div>.linkBtnHeader:nth-child(7) {
+.header>div>.linkBtnHeader:nth-child(4),
+.header>div>.linkBtnHeader:nth-child(5) {
     background-color: var(--seccondColor);
 }
 
-.header>div>.linkBtnHeader:nth-child(6):hover,
-.header>div>.linkBtnHeader:nth-child(7):hover {
+.header>div>.linkBtnHeader:nth-child(4):hover,
+.header>div>.linkBtnHeader:nth-child(5):hover {
     background-color: var(--mainColor);
     color: var(--seccondColor);
 }

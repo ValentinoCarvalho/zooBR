@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Footer.css"
 
 export const Footer = () => {
@@ -10,15 +11,16 @@ export const Footer = () => {
                 </div>
                 <ul id="navegacaoFooter">
                     <h2>Navegação</h2>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Galeria</a></li>
-                    <li><a href="">Eventos</a></li>
-                    <li><a href="">Educativo</a></li>
-                    <li><a href="">Mapa do Zoológico</a></li>
-                    <li><a href="">Depoimentos</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Trabalhe Conosco</a></li>
+                    <li><Link  onClick={window.scrollTo({top: 0})} onClick={window.scrollTo({top: 0})} to="/">Início</Link></li>
+                    {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/galeria">Galeria</Link></li> */}
+                    {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/eventos">Eventos</Link></li> */}
+                    <li><Link  onClick={window.scrollTo({top: 0})} to="/educativo">Educativo</Link></li>
+                    <li><Link  onClick={window.scrollTo({top: 0})} to="/mapa">Mapa do Zoológico</Link></li>
+                    {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/depoimentos">Depoimentos</Link></li> */}
+                    <li><Link  onClick={window.scrollTo({top: 0})} to="/contato">Contato</Link></li>
+                    <li><Link  onClick={window.scrollTo({top: 0})} to="/sobre">Sobre</Link></li>
+                    {/* <li><Link  onClick={window.scrollTo({top: 0})} to="/trabalhe-conosco">Trabalhe Conosco</Link></li> */}
+                    <li><Link  onClick={window.scrollTo({top: 0})} to="/termos-e-condicoes">Termos e Condições</Link></li>
                 </ul>
                 <ul id="horarioFooter">
                     <h2>Visite-nos</h2>

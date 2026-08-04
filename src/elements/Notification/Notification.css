@@ -32,8 +32,19 @@
     font-size: 2rem;
 }
 
+.notificationTitle::after{
+    position: absolute;
+    content: "";
+    background-color: var(--seccondColor);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    top: 4.2rem;
+}
+
 .notificationText {
     font-size: 1.5rem;
+    color: white;
 }
 
 #closeNotificationBtn {
@@ -41,6 +52,16 @@
     font-size: 2rem;
     background-color: var(--seccondColor);
     border: none;
+    border-radius: 15px;
+    font-family: "Bebas Neue";
+}
+
+#closeNotificationBtn:hover {
+    height: 2.5rem;
+    font-size: 2rem;
+    background-color: #d69812;
+    border: none;
+    scale: 1.01;
     border-radius: 15px;
     font-family: "Bebas Neue";
 }

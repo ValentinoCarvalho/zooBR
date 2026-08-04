@@ -4,6 +4,19 @@
     gap: 50px;
 }
 
+.continueBtn{
+    height: 4rem;
+    background-color: rgb(0, 117, 0);
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+.continueBtn:hover{
+    background-color: rgb(4, 100, 4);
+    cursor: pointer;
+}
+
 .buyTicketsInputContainer {
     width: 100%;
     display: flex;
@@ -58,12 +71,18 @@
     aspect-ratio: 1/1;
     border: none;
     border-radius: 10px;
-    background-color: rgb(21, 197, 21);
+    background-color: green;
     color: white;
     font-size: 2rem;
     align-items: center;
     align-content: center;
 }
+
+.ticketsAmountInput button:hover{
+    background-color: rgb(4, 100, 4);
+    cursor: pointer;
+}
+
 
 .ticketsAmountInput button:nth-child(2) {
     width: 40px;
@@ -75,6 +94,11 @@
     font-size: 2rem;
     align-items: center;
     align-content: center;
+}
+
+.ticketsAmountInput button:nth-child(2):hover{
+   background-color: rgb(165, 0, 0);
+    cursor: pointer;
 }
 
 .ticketBox::after {
@@ -143,6 +167,10 @@
     width: 50px;
     aspect-ratio: 1/1;
     display: none;
+}
+
+.calendarContainer label:hover {
+   background-color: rgb(23, 61, 23);
 }
 
 .calendarDayLabel:has(input:checked) {

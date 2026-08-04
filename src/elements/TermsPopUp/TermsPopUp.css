@@ -1,0 +1,60 @@
+.popUpTerms {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    padding: 1rem;
+    width: 100dvw;
+    justify-content: center;
+    bottom: 0;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    text-align: center;
+
+}
+
+.popUpTerms button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.popUpTerms a {
+    color: white;
+}
+
+@media screen and (max-width: 1080px) {
+    .popUpTerms {
+        display: block;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.788);
+        color: white;
+        padding: 1rem;
+        width: 100dvw;
+        bottom: 0;
+        z-index: 100;
+        flex-direction: column;
+        font-family: Arial;
+        text-align: left;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .popUpTerms button {
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: bolder;
+        margin-top: 30px;
+        width: 90dvw;
+    }
+
+    .popUpTerms a {
+        color: white;
+    }
+
+}

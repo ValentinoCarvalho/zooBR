@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom"
 import "./SmallButton.css"
 
 export const SmallButton = (props) => {
     return (
         <>
-            <a className="smallButton" href="">
-                {props.text}
-                <img className="icon" src="./assets/arrow-up-right-from-square-solid-full.svg" alt="" />
-            </a>
+            <Link className="smallButton" to={"/ingressos"} onclick={window.scrollTo({top:0})} >
+            {props.text}
+            <img className="icon" src="./assets/arrow-up-right-from-square-solid-full.svg" alt="" />
+        </Link >
         </>
     )
 }

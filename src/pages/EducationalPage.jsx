@@ -36,7 +36,7 @@ export const EducationalPage = () => {
                 <GoodHero title="Mais do que entretenimento" text="No ZooBRA acreditamos que conhecer a natureza é o primeiro passo para protegê-la. Nossos programas educativos unem ciência, conservação e experiências práticas para aproximar pessoas de todas as idades da vida selvagem." image="\images\pexels-atiek-arief-2154698689-37875511.jpg" />
 
 
-                <GoodHero right={true} title="Lorem Impsum" text="O rato tentou roer a roupa do Rei de Roma, mas a fusão é apenas um artifício barato para tornarem gems fracas mais fortes" image="/images/pexels-alexey-k-458081116-38247397.jpg" />
+                <GoodHero right={true} title="APRENDER VIVENDO A EXPERIÊNCIA" text="No ZooBRA, a educação acontece por meio da vivência. Durante a visita, os participantes acompanham demonstrações, conhecem curiosidades sobre diferentes espécies e entendem o trabalho realizado por biólogos, veterinários e educadores para preservar a biodiversidade." image="/images/pexels-alexey-k-458081116-38247397.jpg" />
 
                 <ContentIT title="Visitas Escolares" text="O ZooBRA recebe escolas de todo o país com roteiros personalizados para diferentes faixas etárias. Professores contam com materiais de apoio, oficinas e atividades alinhadas aos conteúdos curriculares." image="/images/the-tampa-bay-estuary-program-IcUQNzaHrvg-unsplash.jpg" />
 

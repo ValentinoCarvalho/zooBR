@@ -1,8 +1,10 @@
 import { Footer } from "../elements/Footer"
 import { HeaderNav } from "../elements/HeaderNav"
 import { MobileHeader } from "../elements/MobileHeader"
+import { Notification } from "../elements/Notification/Notification"
 import { useState } from "react"
 import './pagesStyles/BuyTicketsPage.css'
+import { Link } from "react-router-dom"
 
 export const BuyTicketsPage = () => {
     const today = new Date()
@@ -93,6 +95,12 @@ export const BuyTicketsPage = () => {
         }))
     }
 
+    const submitPurchaseRequest = (finalData) => {
+        console.log("Função de envio executada", finalData)
+        setDisplayNotification(true)
+        // aqui depois entra o fetch/axios pro back-end
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -115,18 +123,22 @@ export const BuyTicketsPage = () => {
             enviadoEm: new Date()
         }
 
-        console.log(finalData)
-        // aqui depois entra o fetch/axios pro back-end
+        submitPurchaseRequest(finalData)
     }
 
+    const [displayNotification, setDisplayNotification] = useState(false)
+
     return (<>
+
+        {displayNotification === true ? <Notification   title="Informaçoes salvas com sucesso!" text="Será aberto um novo guia, onde será feito o pagamento. (WIP)" display='true' /> : <></>}
+
         <HeaderNav headerLogo="/assets/logoZoo.png" />
         <MobileHeader />
         <section className="whiteSection">
             <form className="buyTicketsForm" onSubmit={handleSubmit}>
                 <section className="buyTicketsInputContainer">
                     <h1>Comprar Ingressos</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus possimus eos magnam illo saepe natus laboriosam perspiciatis nisi quibusdam corrupti atque, impedit ea hic doloremque fuga, itaque et accusantium quasi.</p>
+                    <p>Os ingressos adquiridos são válidos exclusivamente para a data selecionada durante a compra. Alterações de data estão sujeitas à disponibilidade e às <Link to={'/termos-e-condicoes'}>políticas vigentes</Link> do ZooBRA.</p>
 
                     {ticketsTypes.map(ticketType => (
                         <div className="ticketBox" key={ticketType.nome}>
@@ -217,6 +229,7 @@ export const BuyTicketsPage = () => {
                             onChange={handleFormChange}
                         />
                     </label>
+                    <button type="submit" className="continueBtn">Prosseguir com o pagamento</button>
                 </section>
 
                 <section className="calendarContainer">
@@ -261,7 +274,7 @@ export const BuyTicketsPage = () => {
                         )
                     })}
                 </section>
-                <button type="submit">Prosseguir com o pagamento</button>
+
             </form>
         </section>
         <Footer />

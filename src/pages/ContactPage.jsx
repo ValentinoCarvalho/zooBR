@@ -10,7 +10,7 @@ export const ContactPage = () => {
     const [displayNotification, setDisplayNotification] = useState(false)
 
     return (<>
-        {displayNotification === true ? <Notification title="Formulário enviado com sucesso!" text="AKDSJ ajdlaskj lkasjd" display='true' /> : <></>}
+        {displayNotification === true ? <Notification title="Formulário enviado com sucesso!" text="Você receberá sua resposta através dos meios de contatos disponíveis dentro de 3 dias úteis." display='true' /> : <></>}
 
 
         <HeaderNav headerLogo="/assets/logoZoo.png" />

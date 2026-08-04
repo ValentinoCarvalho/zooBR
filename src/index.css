@@ -5,6 +5,18 @@
     --black: #171717;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--seccondColor);
+}
+
 body {
     background-color: var(--black);
 }
@@ -43,7 +55,7 @@ strong {
 }
 
 
-.outsideItem{
+.outsideItem {
     width: 80%;
 }
 
@@ -113,7 +125,55 @@ main .imagesSection {
         position: relative;
         row-gap: 30px;
     }
-    
+
+    .programacaoTitle {
+        width: 80dvw;
+        margin-top: 70px;
+    }
+    .hoursTable {
+    width: 100%;
+    min-width: 80dvw;
+}
+}
+
+.programacaoTitle {
+    margin-top: 70px;
+}
+
+
+.hoursTable {
+    width: 65dvw;
+    border-collapse: collapse;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.hoursTable thead {
+    background: #FFC21C;
+}
+
+.hoursTable th {
+    padding: 20px;
+    color: #1E1E1E;
+    text-align: left;
+}
+
+.hoursTable td {
+    padding: 18px 20px;
+    color: white;
+}
+
+.hoursTable tbody tr:nth-child(odd) {
+    background: #242424;
+}
+
+.hoursTable tbody tr:nth-child(even) {
+    background: #2d2d2d;
+}
+
+.hoursTable tbody tr:hover {
+    background: #3a3a3a;
 }
 
 /* 

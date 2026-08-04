@@ -9,6 +9,8 @@ import { BuyTicketsPage } from './pages/BuyTicketsPage.jsx'
 import { MapPage } from './pages/MapPage.jsx'
 import { ContactPage } from './pages/ContactPage.jsx'
 import { EducationalPage } from './pages/EducationalPage.jsx'
+import { TermosECondicoes } from './pages/TermosECondicoes.jsx'
+import { Programacao } from './pages/Programacao.jsx'
 
 const router = createBrowserRouter([
   {path: '/',
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "/educativo",
     element: <EducationalPage />
+  },
+  {
+    path: "/termos-e-condicoes",
+    element: <TermosECondicoes/>
+  },
+  {
+    path: "/horarios",
+    element: <Programacao />
   }
 ])
 

@@ -8,6 +8,7 @@ import { GaleryImg } from "../elements/GaleryImg"
 import { GoodHero } from "../elements/GoodHero/GoodHero"
 import { GoogleMap } from "../elements/GoogleMap"
 import { Header } from "../elements/Header"
+import { HeaderNav } from "../elements/HeaderNav"
 import { Hero } from "../elements/Hero"
 import { InfoBlockContainer } from "../elements/InfoBlockContainer"
 import { MobileHeader } from "../elements/MobileHeader"
@@ -18,7 +19,7 @@ import { TermsPopUp } from "../elements/TermsPopUp/TermsPopUp"
 import { Testimonials } from "../elements/Testimonials"
 import { Video } from "../elements/Video"
 
-export const MainPage = () => {
+export const Programacao = () => {
     const banners = ['/images/banners/banner0.png', '/images/banners/banner1.png', '/images/banners/banner2.png', '/images/banners/banner3.png', '/images/banners/banner4.png', '/images/banners/banner5.png']
 
     const dataTempo = new Date
@@ -29,21 +30,68 @@ export const MainPage = () => {
     return (
         <>
 
-        <TermsPopUp ></TermsPopUp>
+            <TermsPopUp ></TermsPopUp>
 
-            <MobileHeader />
+            <HeaderNav headerLogo="/assets/logoZoo.png"/>
 
-            <Header title="Explore o lado feroz do mundo" text="Ingressos a partir de " strong="R$75,00" image={banners[Math.floor(Math.random() * banners.length)]} />
+            <MobileHeader/>
 
             <main>
 
-                <Hero title="Boas-vindas ao Mundo Selvagem" image="\images\polarBear.png" textBtn="Comprar Ingressos" />
+                <section className="programacaoTitle">
+                    <h1><strong>Planeje sua visita</strong> </h1>
+                    <p>Organize seu passeio com tranquilidade. O ZooBRA está aberto durante toda a semana, oferecendo experiências educativas, atrações e contato com a natureza para visitantes de todas as idades.</p>
+                </section>
+                <section className="programacaoTitle">
+                    <h2>Horários:</h2>
+                    <table>
+                        <table class="hoursTable">
 
-                <Bigtext text="SOMOS O MAIOR ZOOLÓGICO DA AMÉRICA LATINA" />
+                            <thead>
+                                <tr>
+                                    <th>Local</th>
+                                    <th>Horário</th>
+                                </tr>
+                            </thead>
 
-                <InfoBlockContainer />
+                            <tbody className="timeTable">
 
-                <GoodHero right={false} title="CONEXÕES QUE TRANSFORMAM" text="Cada encontro no ZooBRA é uma oportunidade para despertar a curiosidade e fortalecer o respeito pela vida selvagem. Mais do que observar animais, nossos visitantes conhecem histórias de conservação e entendem por que proteger a natureza é uma responsabilidade de todos." image="/images/pexels-alexey-k-458081116-38247397.jpg" />
+                                <tr>
+                                    <td>Parque</td>
+                                    <td>08h00 às 18h00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bilheteria</td>
+                                    <td>08h00 às 17h00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Museu da Biodiversidade</td>
+                                    <td>09h00 às 17h30</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Centro Educacional</td>
+                                    <td>Conforme programação</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Restaurantes</td>
+                                    <td>09h00 às 17h30</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Loja de Souvenirs</td>
+                                    <td>09h00 às 18h00</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </table>
+                </section>
+
 
                 <Bigtext text="VÁRIAS ATIVIDADES DIVERTIDAS E EDUCATIVAS" />
 
@@ -55,19 +103,6 @@ export const MainPage = () => {
 
 
                 <section className="yellowSection">
-                    <Video text="Conheça nossos animais!" />
-
-                    <Bigtext text="GALERIA" id="galeria" color="var(--black)" />
-
-                    <Galery />
-
-                    <Bigtext text="LOCALIZAÇÃO ACESSÍVEL" color="var(--black)" />
-
-                    <GoogleMap />
-
-                    <Bigtext text="DEPOIMENTOS" id="depoimentos" color="var(--black)" />
-
-                    <Testimonials />
 
                     <Bigtext text="PRÓXIMOS EVENTOS" id="proximosEventos" color="var(--black)" />
 
