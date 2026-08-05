@@ -131,7 +131,7 @@ main .imagesSection {
         flex-direction: column;
         align-items: center;
         position: relative;
-        row-gap: 30px;
+        row-gap: 100px;
     }
 
     .programacaoTitle {

@@ -27,18 +27,18 @@ export const ContactPage = () => {
             <form className="formContact" onSubmit={e=>{e.preventDefault();setDisplayNotification(true)}}>
 
                 <label htmlFor="name" className="mandatoryInput">Primeiro nome:</label>
-                <input id='name' className="formInput" type="text" name="" placeholder="José" required />
+                <input id='name' className="formInput" type="text" name="" maxLength={50} placeholder="José" required />
 
                 <label htmlFor="lastName" className="mandatoryInput">Sobrenome:</label>
-                <input id='lastName' className="formInput" type="text" name="" placeholder="Ferreira" required />
+                <input id='lastName' className="formInput" type="text" name="" maxLength={50} placeholder="Ferreira" required />
 
                 <label htmlFor="email" className="mandatoryInput">Email:</label>
-                <input id='email' className="formInput" type="email" name="" placeholder="nome@gmail.com" required />
+                <input id='email' className="formInput" type="email" name="" maxLength={256} placeholder="nome@gmail.com" required />
 
                 <label htmlFor="telephone">Telefone / celular:</label>
-                <input id='telephone' className="formInput" type="tel" name="" placeholder="(11)1234-5678" />
+                <input id='telephone' className="formInput" type="tel" name="" maxLength={25} placeholder="(11)1234-5678" />
 
-                <label htmlFor="contactReason" className="mandatoryInput" required>Motivo de contato:</label>
+                <label htmlFor="contactReason" className="mandatoryInput" maxLength={1500} required>Motivo de contato:</label>
                 <textarea name="" id="contactReason" required></textarea>
 
                 <input id='' className="formInput" type="submit" name="" onSubmit={(ee) => {

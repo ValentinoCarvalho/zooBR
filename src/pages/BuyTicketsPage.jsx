@@ -171,7 +171,7 @@ export const BuyTicketsPage = () => {
                     ))}<h2>Total: R${totalPrice},00</h2>
 
                     <label htmlFor="buyInfoName">Nome
-                        <input
+                        <input maxLength={50}
                             required
                             className="buyTicketsInput"
                             id="buyInfoName"
@@ -183,7 +183,7 @@ export const BuyTicketsPage = () => {
                         />
                     </label>
                     <label htmlFor="buyInfoLastName">Sobrenome
-                        <input
+                        <input maxLength={50}
                             required
                             className="buyTicketsInput"
                             id="buyInfoLastName"
@@ -195,7 +195,7 @@ export const BuyTicketsPage = () => {
                         />
                     </label>
                     <label htmlFor="buyInfoTel">Telefone / Celular
-                        <input
+                        <input maxLength={25}
                             required
                             className="buyTicketsInput"
                             id="buyInfoTel"
@@ -207,7 +207,7 @@ export const BuyTicketsPage = () => {
                         />
                     </label>
                     <label htmlFor="buyInfoEmail">Email
-                        <input
+                        <input maxLength={256}
                             required
                             className="buyTicketsInput"
                             id="buyInfoEmail"
@@ -219,7 +219,7 @@ export const BuyTicketsPage = () => {
                         />
                     </label>
                     <label htmlFor="buyInfoCPF">CPF
-                        <input
+                        <input minLength={9} maxLength={14}
                             required
                             className="buyTicketsInput"
                             id="buyInfoCPF"
